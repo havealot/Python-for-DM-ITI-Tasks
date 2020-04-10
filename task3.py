@@ -61,3 +61,6 @@ for i in prediction:
 diabetes['Outcome']= scores
 
 diabetes.to_sql(name = 'diabetes_scored', con=con, index = False, if_exists='append')
+
+# crontab -e
+# 0 * * * * /usr/bin/python /home/ammar/Desktop/task3/task3.py
